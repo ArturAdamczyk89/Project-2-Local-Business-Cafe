@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Cafe Aroma</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cafe Aroma</h1>
+        </div>
+        <nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="index.html" class="active">Menu</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <!-- Cart Icon -->
+            <div class="cart-container">
+                <div class="cart-icon">
+                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                    </svg>
+                    <span class="cart-count" style="display: none;">0</span>
+                </div>
+                <!-- Cart Dropdown -->
+                <div class="cart-dropdown">
+                    <h3>Your Cart</h3>
+                    <div class="empty-cart-message">Your cart is empty</div>
+                    <div class="cart-items">
+                        <!-- Cart items will be added here dynamically -->
+                    </div>
+                    <div class="cart-footer" style="display: none;">
+                        <div class="cart-total">
+                            <span>Total:</span>
+                            <span class="cart-total-value">£0.00</span>
+                        </div>
+                        <button class="checkout-btn">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="page-header-content">
+                <h2>Our Menu</h2>
+            </div>
+        </section>
+
+        <section class="menu-categories">
+            <div class="category-card">
+                <img src="../images/Menu/Menu Cards/coffee_drinks menu category card.png" alt="Various coffee drinks on a wooden table">
+                <div class="category-content">
+                    <h3>Coffee</h3>
+                    <p>From classic espresso to fancy specialty drinks, our coffee is sourced from the best beans and crafted with care.</p>
+                    <a href="coffee.html" class="btn">View Coffee Menu</a>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <img src="../images/Menu/Menu Cards/non-coffee_drinks menu category card.png" alt="Various non-coffee drinks including tea and juice">
+                <div class="category-content">
+                    <h3>Other Drinks</h3>
+                    <p>Refreshing teas, juices, smoothies, and other non-coffee beverages for every taste and preference.</p>
+                    <a href="drinks.html" class="btn">View Drinks Menu</a>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <img src="../images/Menu/Menu Cards/pastries and snacks menu category card.png" alt="Various pastries and snacks on display">
+                <div class="category-content">
+                    <h3>Snacks & Pastries</h3>
+                    <p>Delicious fresh-baked goods, sandwiches, and other treats to complement your beverage.</p>
+                    <a href="snacks.html" class="btn">View Snacks Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-info">
+            <div class="info-card">
+                <h3>Dietary Preferences</h3>
+                <p>We offer a variety of options for different dietary needs, including vegan, gluten-free, and dairy-free choices. Just ask our friendly staff for recommendations!</p>
+            </div>
+            
+            <div class="info-card">
+                <h3>Seasonal Specials</h3>
+                <p>Be sure to check our seasonal menu for limited-time offerings that showcase the best flavors of each season.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cafe Aroma</h3>
+                <p>123 Coffee Street<br>Bean Town, CT 45678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 7am - 8pm<br>
+                Saturday - Sunday: 8am - 6pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Phone: (555) 123-4567<br>
+                Email: hello@cafearoma.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Cafe Aroma. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

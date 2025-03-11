@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Menu - Cafe Aroma</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cafe Aroma</h1>
+        </div>
+        <nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="index.html" class="active">Menu</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <!-- Cart Icon -->
+            <div class="cart-container">
+                <div class="cart-icon">
+                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                    </svg>
+                    <span class="cart-count" style="display: none;">0</span>
+                </div>
+                <!-- Cart Dropdown -->
+                <div class="cart-dropdown">
+                    <h3>Your Cart</h3>
+                    <div class="empty-cart-message">Your cart is empty</div>
+                    <div class="cart-items">
+                        <!-- Cart items will be added here dynamically -->
+                    </div>
+                    <div class="cart-footer" style="display: none;">
+                        <div class="cart-total">
+                            <span>Total:</span>
+                            <span class="cart-total-value">£0.00</span>
+                        </div>
+                        <button class="checkout-btn">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="page-header-content">
+                <h2>Coffee Menu</h2>
+                <p>Expertly crafted coffee for every taste</p>
+            </div>
+        </section>
+
+        <section class="menu-navigation">
+            <a href="index.html">← Back to Categories</a>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="espresso">Espresso</button>
+                <button class="filter-btn" data-filter="specialty">Specialty</button>
+                <button class="filter-btn" data-filter="cold">Cold Coffee</button>
+            </div>
+        </section>
+
+        <section class="menu-items">
+            <!-- Espresso-based drinks -->
+            <div class="menu-item espresso" data-item-id="espresso-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Coffee/Espresso.png" alt="Espresso in a small cup">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Espresso</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£2.75</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">A concentrated shot of coffee served in a small cup. Bold and intense flavor.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item espresso" data-item-id="americano-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Coffee/Americano.png" alt="Americano coffee in a white cup">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Americano</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£3.25</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Espresso diluted with hot water, giving it a similar strength to regular drip coffee but different flavor.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item espresso" data-item-id="cappuccino-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Coffee/Cappuccino.png" alt="Cappuccino in a ceramic cup">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Cappuccino</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£4.25</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Equal parts espresso, steamed milk, and milk foam, creating a perfect balance of strength and creaminess.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item espresso" data-item-id="latte-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Coffee/Latte.png" alt="Latte in a tall glass">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Latte</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£4.50</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Espresso with steamed milk and a small layer of foamed milk, making it creamy and mild.</p>
+                </div>
+            </div>
+            
+            <!-- Specialty coffee -->
+            <div class="menu-item specialty" data-item-id="caramel-macchiato-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Coffee/Caramel macchiato.png" alt="Caramel macchiato with caramel drizzle">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Caramel Macchiato</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£4.95</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Vanilla-flavored milk with espresso and topped with caramel drizzle. A perfect sweet treat.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item specialty" data-item-id="mocha-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Coffee/Mocha.png" alt="Mocha with whipped cream">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Mocha</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£4.75</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Espresso with chocolate syrup and steamed milk, topped with whipped cream. Perfect for chocolate lovers.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item specialty" data-item-id="flavored-latte-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Coffee/Flavored latte with cinnamon.png" alt="Flavored latte with cinnamon">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Flavored Latte</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£4.95</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Our creamy latte with your choice of flavor: vanilla, hazelnut, caramel, or cinnamon.</p>
+                </div>
+            </div>
+            
+            <!-- Cold coffee -->
+            <div class="menu-item cold" data-item-id="iced-coffee-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Coffee/Iced coffee.png" alt="Iced coffee in a tall glass">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Iced Coffee</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£3.75</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Chilled coffee served over ice, perfect for hot days or when you need a refreshing pick-me-up.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item cold" data-item-id="cold-brew-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Coffee/Cold brew coffee.png" alt="Cold brew coffee in a glass">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Cold Brew</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£4.50</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Coffee steeped in cold water for 12+ hours, resulting in a smooth, less acidic flavor.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item cold" data-item-id="frappe-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Coffee/Coffee frappe.png" alt="Frappe with whipped cream">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Frappe</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£5.25</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Blended iced coffee with milk, ice, and your choice of flavor, topped with whipped cream.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="coffee-info">
+            <div class="info-box">
+                <h3>Coffee Bean Origins</h3>
+                <p>We source our beans from ethical farms in Ethiopia, Colombia, and Guatemala. Each origin provides unique flavor profiles, from fruity and floral to chocolatey and nutty.</p>
+            </div>
+            
+            <div class="info-box">
+                <h3>Customization Options</h3>
+                <p>All drinks can be customized with your choice of milk (whole, skim, almond, soy, oat), extra shots, or flavor additions for a small additional charge.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cafe Aroma</h3>
+                <p>123 Coffee Street<br>Bean Town, CT 45678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 7am - 8pm<br>
+                Saturday - Sunday: 8am - 6pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Phone: (555) 123-4567<br>
+                Email: hello@cafearoma.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Cafe Aroma. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

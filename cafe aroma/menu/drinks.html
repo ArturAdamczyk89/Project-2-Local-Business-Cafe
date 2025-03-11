@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks Menu - Cafe Aroma</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cafe Aroma</h1>
+        </div>
+        <nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="index.html" class="active">Menu</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <!-- Cart Icon -->
+            <div class="cart-container">
+                <div class="cart-icon">
+                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                    </svg>
+                    <span class="cart-count" style="display: none;">0</span>
+                </div>
+                <!-- Cart Dropdown -->
+                <div class="cart-dropdown">
+                    <h3>Your Cart</h3>
+                    <div class="empty-cart-message">Your cart is empty</div>
+                    <div class="cart-items">
+                        <!-- Cart items will be added here dynamically -->
+                    </div>
+                    <div class="cart-footer" style="display: none;">
+                        <div class="cart-total">
+                            <span>Total:</span>
+                            <span class="cart-total-value">£0.00</span>
+                        </div>
+                        <button class="checkout-btn">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="page-header-content">
+                <h2>Drinks Menu</h2>
+                <p>Refreshing beverages beyond coffee</p>
+            </div>
+        </section>
+
+        <section class="menu-navigation">
+            <a href="index.html">← Back to Categories</a>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="tea">Tea</button>
+                <button class="filter-btn" data-filter="juice">Juice & Smoothies</button>
+                <button class="filter-btn" data-filter="special">Specialty Drinks</button>
+            </div>
+        </section>
+
+        <section class="menu-items">
+            <!-- Tea drinks -->
+            <div class="menu-item tea" data-item-id="black-tea-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Other Drinks/Black tea.png" alt="Black tea in a ceramic cup">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Black Tea</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£3.25</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Classic black tea with a robust flavor. Served hot with optional lemon or milk.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item tea" data-item-id="green-tea-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Other Drinks/Green tea.png" alt="Green tea in a glass cup">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Green Tea</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£3.50</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Delicate green tea with light, refreshing flavor. Rich in antioxidants.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item tea" data-item-id="chai-latte-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Other Drinks/Chai latte.png" alt="Chai latte with spices">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Chai Latte</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£4.25</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Black tea infused with warming spices, mixed with steamed milk for a comforting drink.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item tea" data-item-id="herbal-tea-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Other Drinks/Herbal tea.png" alt="Herbal tea with herbs and flowers">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Herbal Tea</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£3.75</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Caffeine-free herbal infusions in various flavors: chamomile, peppermint, and hibiscus.</p>
+                </div>
+            </div>
+            
+            <!-- Juice & Smoothies -->
+            <div class="menu-item juice" data-item-id="orange-juice-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Other Drinks/Fresh_orange_juice.png" alt="Fresh orange juice">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Fresh Orange Juice</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£4.50</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Freshly squeezed orange juice, available all day. No added sugar or preservatives.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item juice" data-item-id="green-smoothie-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Other Drinks/Green smoothie.png" alt="Green smoothie in a glass">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Green Goodness Smoothie</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£5.75</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Spinach, banana, apple, and ginger blended with your choice of milk or juice.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item juice" data-item-id="berry-smoothie-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Other Drinks/Berry smoothie.png" alt="Berry smoothie with fruits">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Berry Blast Smoothie</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£5.75</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Mixed berries, banana, and yogurt blended to perfection. A customer favorite!</p>
+                </div>
+            </div>
+            
+            <!-- Specialty drinks -->
+            <div class="menu-item special" data-item-id="hot-chocolate-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Other Drinks/Hot chocolate.png" alt="Hot chocolate with whipped cream">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Signature Hot Chocolate</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£4.25</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Rich Belgian chocolate steamed with milk, topped with whipped cream and chocolate shavings.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item special" data-item-id="matcha-latte-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Other Drinks/Matcha latte.png" alt="Matcha latte in a cup">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Matcha Latte</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£4.95</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Premium Japanese matcha whisked with steamed milk. Available hot or iced.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item special" data-item-id="italian-soda-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Other Drinks/Italian soda.png" alt="Italian soda with fruit garnish">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Italian Soda</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£3.95</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Sparkling water with your choice of flavor syrup, served over ice with optional cream.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="coffee-info">
+            <div class="info-box">
+                <h3>Drink Customization</h3>
+                <p>Most drinks can be customized with dairy alternatives (almond, soy, oat milk) for a small additional charge. Just ask your barista for options.</p>
+            </div>
+            
+            <div class="info-box">
+                <h3>Seasonal Offerings</h3>
+                <p>Don't miss our seasonal drink specials that change throughout the year to highlight the freshest flavors of each season.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cafe Aroma</h3>
+                <p>123 Coffee Street<br>Bean Town, CT 45678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 7am - 8pm<br>
+                Saturday - Sunday: 8am - 6pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Phone: (555) 123-4567<br>
+                Email: hello@cafearoma.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Cafe Aroma. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks & Pastries Menu - Cafe Aroma</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cafe Aroma</h1>
+        </div>
+        <nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="index.html" class="active">Menu</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <!-- Cart Icon -->
+            <div class="cart-container">
+                <div class="cart-icon">
+                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                    </svg>
+                    <span class="cart-count" style="display: none;">0</span>
+                </div>
+                <!-- Cart Dropdown -->
+                <div class="cart-dropdown">
+                    <h3>Your Cart</h3>
+                    <div class="empty-cart-message">Your cart is empty</div>
+                    <div class="cart-items">
+                        <!-- Cart items will be added here dynamically -->
+                    </div>
+                    <div class="cart-footer" style="display: none;">
+                        <div class="cart-total">
+                            <span>Total:</span>
+                            <span class="cart-total-value">£0.00</span>
+                        </div>
+                        <button class="checkout-btn">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="page-header-content">
+                <h2>Snacks & Pastries</h2>
+                <p>Delicious treats to complement your beverage</p>
+            </div>
+        </section>
+
+        <section class="menu-navigation">
+            <a href="index.html">← Back to Categories</a>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="pastry">Pastries</button>
+                <button class="filter-btn" data-filter="savory">Savory Items</button>
+                <button class="filter-btn" data-filter="dessert">Desserts</button>
+            </div>
+        </section>
+
+        <section class="menu-items">
+            <!-- Pastries -->
+            <div class="menu-item pastries" data-item-id="croissant-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Snacks & Pastries/croissant.png" alt="Fresh buttery croissant">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Butter Croissant</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£2.50</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Flaky, buttery layers make this croissant simply irresistible.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item pastries" data-item-id="muffin-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Snacks & Pastries/Blueberry muffin.png" alt="Blueberry muffin">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Blueberry Muffin</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£3.25</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Moist muffin filled with juicy blueberries and topped with a light sugar sprinkle.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item pastries" data-item-id="scone-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Snacks & Pastries/Mixed berry scone.png" alt="Vanilla scone">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Mixed Berry Scone</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£3.25</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Buttery scone with sweet mixed berries. Perfect with a cup of tea.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item pastry" data-item-id="cinnamon-roll-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Snacks & Pastries/Cinnamon roll.png" alt="Cinnamon roll with icing">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Cinnamon Roll</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£4.25</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Warm, soft roll swirled with cinnamon and brown sugar, topped with cream cheese frosting.</p>
+                </div>
+            </div>
+            
+            <!-- Savory items -->
+            <div class="menu-item savory" data-item-id="avocado-toast-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Snacks & Pastries/Avocado toast.png" alt="Avocado toast on sourdough bread">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Avocado Toast</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£7.50</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Toasted sourdough bread topped with smashed avocado, cherry tomatoes, and a sprinkle of sea salt.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item savory" data-item-id="quiche-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Snacks & Pastries/Slice of spinach and feta quiche.png" alt="Spinach and feta quiche slice">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Spinach & Feta Quiche</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£6.75</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Savory egg custard with spinach and feta cheese in a buttery pastry crust. Served warm.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item savory" data-item-id="grilled-cheese-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Snacks & Pastries/Grilled cheese sandwich.png" alt="Grilled cheese sandwich">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Grilled Cheese Sandwich</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£6.95</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Artisan sourdough bread with a blend of melted cheeses, grilled to perfection.</p>
+                </div>
+            </div>
+            
+            <!-- Desserts -->
+            <div class="menu-item dessert" data-item-id="chocolate-cake-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Snacks & Pastries/chocolate cake.png" alt="Slice of chocolate cake">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Chocolate Layer Cake</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£5.50</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Rich, moist chocolate cake layered with chocolate ganache and buttercream frosting.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item dessert" data-item-id="cheesecake-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Snacks & Pastries/cheesecake with fruit_topping.png" alt="Slice of New York cheesecake">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Classic Cheesecake</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£5.95</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Creamy New York style cheesecake with a graham cracker crust, topped with seasonal fruit.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item dessert" data-item-id="cookie-1">
+                <div class="menu-item-image-container">
+                    <img src="../images/Menu/Snacks & Pastries/Chocolate chip cookie.png" alt="Chocolate chip cookie">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>Chocolate Chip Cookie</h3>
+                        <div class="price-with-controls">
+                            <p class="price">£2.75</p>
+                            <button class="add-to-cart-btn">Add</button>
+                        </div>
+                    </div>
+                    <p class="description">Large, soft-baked cookie with generous chunks of chocolate. Baked fresh throughout the day.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="coffee-info">
+            <div class="info-box">
+                <h3>Dietary Options</h3>
+                <p>We offer several gluten-free and vegan options daily. Please ask our staff for today's selections and allergen information.</p>
+            </div>
+            
+            <div class="info-box">
+                <h3>Freshly Baked</h3>
+                <p>All our pastries and breads are baked in-house daily. We never use preservatives or artificial ingredients.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cafe Aroma</h3>
+                <p>123 Coffee Street<br>Bean Town, CT 45678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 7am - 8pm<br>
+                Saturday - Sunday: 8am - 6pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Phone: (555) 123-4567<br>
+                Email: hello@cafearoma.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Cafe Aroma. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

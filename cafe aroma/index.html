@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Aroma - Homemade Goodness</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cafe Aroma</h1>
+        </div>
+        <nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./menu/index.html">Menu</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <!-- Cart Icon -->
+            <div class="cart-container">
+                <div class="cart-icon">
+                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                    </svg>
+                    <span class="cart-count" style="display: none;">0</span>
+                </div>
+                <!-- Cart Dropdown -->
+                <div class="cart-dropdown">
+                    <h3>Your Cart</h3>
+                    <div class="empty-cart-message">Your cart is empty</div>
+                    <div class="cart-items">
+                        <!-- Cart items will be added here dynamically -->
+                    </div>
+                    <div class="cart-footer" style="display: none;">
+                        <div class="cart-total">
+                            <span>Total:</span>
+                            <span class="cart-total-value">£0.00</span>
+                        </div>
+                        <button class="checkout-btn">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Cafe Aroma</h2>
+                <p>Where Every Cup Tells a Story</p>
+                <a href="./menu/index.html" class="btn">View Our Menu</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="./images/Menu/Feature Icons/coffee_bean.png" alt="Coffee bean icon">
+                </div>
+                <h3>Premium Coffee</h3>
+                <p>Sourced from the best farms around the world and roasted to perfection.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="./images/Menu/Feature Icons/slice of cake.png" alt="Cake icon">
+                </div>
+                <h3>Fresh Pastries</h3>
+                <p>Baked daily in our kitchen using traditional recipes and quality ingredients.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="./images/Menu/Feature Icons/Chill atmosphere.png" alt="Armchair with a steaming cofee cup on a coffee table">
+                </div>
+                <h3>Cozy Atmosphere</h3>
+                <p>A perfect space to work, meet friends, or simply enjoy a moment of calm.</p>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="cta-content">
+                <h2>Today's Special</h2>
+                <p>Caramel Macchiato & Blueberry Muffin Combo</p>
+                <a href="menu/coffee.html" class="btn">Order Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cafe Aroma</h3>
+                <p>123 Coffee Street<br>Bean Town, CT 45678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 7am - 8pm<br>
+                Saturday - Sunday: 8am - 6pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Phone: (555) 123-4567<br>
+                Email: hello@cafearoma.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Cafe Aroma. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

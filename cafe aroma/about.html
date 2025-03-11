@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cafe Aroma</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cafe Aroma</h1>
+        </div>
+        <nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="menu/index.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Cart Icon -->
+            <div class="cart-container">
+                <div class="cart-icon">
+                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                    </svg>
+                    <span class="cart-count" style="display: none;">0</span>
+                </div>
+                <!-- Cart Dropdown -->
+                <div class="cart-dropdown">
+                    <h3>Your Cart</h3>
+                    <div class="empty-cart-message">Your cart is empty</div>
+                    <div class="cart-items">
+                        <!-- Cart items will be added here dynamically -->
+                    </div>
+                    <div class="cart-footer" style="display: none;">
+                        <div class="cart-total">
+                            <span>Total:</span>
+                            <span class="cart-total-value">£0.00</span>
+                        </div>
+                        <button class="checkout-btn">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="page-header-content">
+                <h2>Our Story</h2>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="about-text">
+                <h3>How We Started</h3>
+                <p>Cafe Aroma was born out of a passion for quality coffee and a desire to create a welcoming space for our community. Founded in 2015 by the Johnson family, our cafe started as a small corner shop with just a few tables and a dedicated coffee machine.</p>
+                
+                <p>What began as a simple dream has grown into a beloved local establishment, known for our carefully sourced beans, handcrafted beverages, and freshly baked goods that keep our customers coming back day after day.</p>
+                
+                <h3>Our Philosophy</h3>
+                <p>At Cafe Aroma, we believe that great coffee is more than just a beverage—it's an experience. We're committed to:</p>
+                
+                <ul class="about-list">
+                    <li>Sourcing the highest quality beans from ethical suppliers</li>
+                    <li>Creating a warm, inviting atmosphere where everyone feels welcome</li>
+                    <li>Supporting local producers and reducing our environmental footprint</li>
+                    <li>Continuously improving our craft and expanding our offerings</li>
+                </ul>
+                
+                <h3>Our Team</h3>
+                <p>Our dedicated team of baristas and bakers take pride in their work and are passionate about providing you with the best possible experience. From perfectly pulled espresso shots to beautifully crafted latte art, our staff's attention to detail is what sets us apart.</p>
+            </div>
+            
+            <div class="about-image">
+                <img src="./images/Menu/Coffee Shop Interior/Coffee shop interior.png" alt="Interior of Cafe Aroma showing warm lighting, wooden tables, and barista preparing coffee">
+            </div>
+        </section>
+        
+        <section class="testimonials">
+            <h3>What Our Customers Say</h3>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <p>"Cafe Aroma is my go-to spot for morning coffee. The staff is always friendly and the pastries are to die for!"</p>
+                    <p class="customer-name">- Sarah Johnson</p>
+                </div>
+                <div class="testimonial">
+                    <p>"I've been coming here for years and the quality has never wavered. Best cappuccino in town, hands down."</p>
+                    <p class="customer-name">- Michael Chen</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Such a cozy atmosphere! I love bringing my laptop and working here - the wifi is great and the coffee keeps me going."</p>
+                    <p class="customer-name">- Emma Rodriguez</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cafe Aroma</h3>
+                <p>123 Coffee Street<br>Bean Town, CT 45678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 7am - 8pm<br>
+                Saturday - Sunday: 8am - 6pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Phone: (555) 123-4567<br>
+                Email: hello@cafearoma.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Cafe Aroma. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
